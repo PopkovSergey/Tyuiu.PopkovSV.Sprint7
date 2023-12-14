@@ -34,7 +34,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             // 
             // buttonDone_PSV
             // 
-            this.buttonDone_PSV.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonDone_PSV.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.buttonDone_PSV.Location = new System.Drawing.Point(667, 12);
             this.buttonDone_PSV.Name = "buttonDone_PSV";
             this.buttonDone_PSV.Size = new System.Drawing.Size(69, 54);
