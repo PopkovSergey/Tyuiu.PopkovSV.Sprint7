@@ -29,13 +29,34 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.buttonDone_PSV = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // buttonDone_PSV
+            // 
+            this.buttonDone_PSV.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonDone_PSV.Location = new System.Drawing.Point(667, 12);
+            this.buttonDone_PSV.Name = "buttonDone_PSV";
+            this.buttonDone_PSV.Size = new System.Drawing.Size(69, 54);
+            this.buttonDone_PSV.TabIndex = 0;
+            this.buttonDone_PSV.Text = "Button1";
+            this.buttonDone_PSV.UseVisualStyleBackColor = false;
+            // 
+            // FormMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonDone_PSV);
+            this.Name = "FormMain";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button buttonDone_PSV;
     }
 }
 
