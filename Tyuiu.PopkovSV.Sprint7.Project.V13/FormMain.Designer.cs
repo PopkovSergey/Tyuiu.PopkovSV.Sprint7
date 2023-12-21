@@ -31,27 +31,31 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
         {
             this.panelTop_PSV = new System.Windows.Forms.Panel();
             this.panelLeft_PSV = new System.Windows.Forms.Panel();
+            this.groupBox = new System.Windows.Forms.GroupBox();
+            this.labelNation_PSV = new System.Windows.Forms.Label();
+            this.labelPopulation_PSV = new System.Windows.Forms.Label();
+            this.labelEconomy_PSV = new System.Windows.Forms.Label();
+            this.labelSquare_PSV = new System.Windows.Forms.Label();
+            this.labelCapital_PSV = new System.Windows.Forms.Label();
+            this.textBoxNation_PSV = new System.Windows.Forms.TextBox();
+            this.textBoxPopulation_PSV = new System.Windows.Forms.TextBox();
+            this.textBoxEconomy_PSV = new System.Windows.Forms.TextBox();
+            this.textBoxSquare_PSV = new System.Windows.Forms.TextBox();
+            this.textBoxCapital_PSV = new System.Windows.Forms.TextBox();
+            this.labelCountryName_PSV = new System.Windows.Forms.Label();
+            this.textBoxCountryName_PSV = new System.Windows.Forms.TextBox();
             this.panelFill_PSV = new System.Windows.Forms.Panel();
             this.splitterPanel_PSV = new System.Windows.Forms.Splitter();
-            this.groupBox = new System.Windows.Forms.GroupBox();
-            this.textBoxCountryName_PSV = new System.Windows.Forms.TextBox();
-            this.labelCountryName_PSV = new System.Windows.Forms.Label();
-            this.textBoxCapital_PSV = new System.Windows.Forms.TextBox();
-            this.textBoxSquare_PSV = new System.Windows.Forms.TextBox();
-            this.textBoxEconomy_PSV = new System.Windows.Forms.TextBox();
-            this.textBoxPopulation_PSV = new System.Windows.Forms.TextBox();
-            this.textBoxNation_PSV = new System.Windows.Forms.TextBox();
-            this.labelCapital_PSV = new System.Windows.Forms.Label();
-            this.labelSquare_PSV = new System.Windows.Forms.Label();
-            this.labelEconomy_PSV = new System.Windows.Forms.Label();
-            this.labelPopulation_PSV = new System.Windows.Forms.Label();
-            this.labelNation_PSV = new System.Windows.Forms.Label();
+            this.labelName_PSV = new System.Windows.Forms.Label();
+            this.panelTop_PSV.SuspendLayout();
             this.panelLeft_PSV.SuspendLayout();
             this.groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTop_PSV
             // 
+            this.panelTop_PSV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panelTop_PSV.Controls.Add(this.labelName_PSV);
             this.panelTop_PSV.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop_PSV.Location = new System.Drawing.Point(0, 0);
             this.panelTop_PSV.Name = "panelTop_PSV";
@@ -66,22 +70,6 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.panelLeft_PSV.Name = "panelLeft_PSV";
             this.panelLeft_PSV.Size = new System.Drawing.Size(449, 350);
             this.panelLeft_PSV.TabIndex = 1;
-            // 
-            // panelFill_PSV
-            // 
-            this.panelFill_PSV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFill_PSV.Location = new System.Drawing.Point(449, 100);
-            this.panelFill_PSV.Name = "panelFill_PSV";
-            this.panelFill_PSV.Size = new System.Drawing.Size(351, 350);
-            this.panelFill_PSV.TabIndex = 2;
-            // 
-            // splitterPanel_PSV
-            // 
-            this.splitterPanel_PSV.Location = new System.Drawing.Point(449, 100);
-            this.splitterPanel_PSV.Name = "splitterPanel_PSV";
-            this.splitterPanel_PSV.Size = new System.Drawing.Size(3, 350);
-            this.splitterPanel_PSV.TabIndex = 3;
-            this.splitterPanel_PSV.TabStop = false;
             // 
             // groupBox
             // 
@@ -105,93 +93,15 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.groupBox.TabStop = false;
             this.groupBox.Text = "Ввод данных:";
             // 
-            // textBoxCountryName_PSV
+            // labelNation_PSV
             // 
-            this.textBoxCountryName_PSV.Location = new System.Drawing.Point(25, 61);
-            this.textBoxCountryName_PSV.Multiline = true;
-            this.textBoxCountryName_PSV.Name = "textBoxCountryName_PSV";
-            this.textBoxCountryName_PSV.Size = new System.Drawing.Size(150, 33);
-            this.textBoxCountryName_PSV.TabIndex = 0;
-            // 
-            // labelCountryName_PSV
-            // 
-            this.labelCountryName_PSV.AutoSize = true;
-            this.labelCountryName_PSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelCountryName_PSV.Location = new System.Drawing.Point(25, 36);
-            this.labelCountryName_PSV.Name = "labelCountryName_PSV";
-            this.labelCountryName_PSV.Size = new System.Drawing.Size(150, 20);
-            this.labelCountryName_PSV.TabIndex = 1;
-            this.labelCountryName_PSV.Text = "Название страны :";
-            // 
-            // textBoxCapital_PSV
-            // 
-            this.textBoxCapital_PSV.Location = new System.Drawing.Point(273, 61);
-            this.textBoxCapital_PSV.Multiline = true;
-            this.textBoxCapital_PSV.Name = "textBoxCapital_PSV";
-            this.textBoxCapital_PSV.Size = new System.Drawing.Size(150, 33);
-            this.textBoxCapital_PSV.TabIndex = 2;
-            // 
-            // textBoxSquare_PSV
-            // 
-            this.textBoxSquare_PSV.Location = new System.Drawing.Point(25, 154);
-            this.textBoxSquare_PSV.Multiline = true;
-            this.textBoxSquare_PSV.Name = "textBoxSquare_PSV";
-            this.textBoxSquare_PSV.Size = new System.Drawing.Size(150, 33);
-            this.textBoxSquare_PSV.TabIndex = 3;
-            // 
-            // textBoxEconomy_PSV
-            // 
-            this.textBoxEconomy_PSV.Location = new System.Drawing.Point(273, 154);
-            this.textBoxEconomy_PSV.Multiline = true;
-            this.textBoxEconomy_PSV.Name = "textBoxEconomy_PSV";
-            this.textBoxEconomy_PSV.Size = new System.Drawing.Size(150, 33);
-            this.textBoxEconomy_PSV.TabIndex = 4;
-            // 
-            // textBoxPopulation_PSV
-            // 
-            this.textBoxPopulation_PSV.Location = new System.Drawing.Point(25, 249);
-            this.textBoxPopulation_PSV.Multiline = true;
-            this.textBoxPopulation_PSV.Name = "textBoxPopulation_PSV";
-            this.textBoxPopulation_PSV.Size = new System.Drawing.Size(150, 33);
-            this.textBoxPopulation_PSV.TabIndex = 5;
-            // 
-            // textBoxNation_PSV
-            // 
-            this.textBoxNation_PSV.Location = new System.Drawing.Point(273, 249);
-            this.textBoxNation_PSV.Multiline = true;
-            this.textBoxNation_PSV.Name = "textBoxNation_PSV";
-            this.textBoxNation_PSV.Size = new System.Drawing.Size(150, 33);
-            this.textBoxNation_PSV.TabIndex = 6;
-            // 
-            // labelCapital_PSV
-            // 
-            this.labelCapital_PSV.AutoSize = true;
-            this.labelCapital_PSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelCapital_PSV.Location = new System.Drawing.Point(309, 36);
-            this.labelCapital_PSV.Name = "labelCapital_PSV";
-            this.labelCapital_PSV.Size = new System.Drawing.Size(83, 20);
-            this.labelCapital_PSV.TabIndex = 7;
-            this.labelCapital_PSV.Text = "Столица :";
-            // 
-            // labelSquare_PSV
-            // 
-            this.labelSquare_PSV.AutoSize = true;
-            this.labelSquare_PSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelSquare_PSV.Location = new System.Drawing.Point(276, 131);
-            this.labelSquare_PSV.Name = "labelSquare_PSV";
-            this.labelSquare_PSV.Size = new System.Drawing.Size(142, 20);
-            this.labelSquare_PSV.TabIndex = 8;
-            this.labelSquare_PSV.Text = "Площадь в км^2 :";
-            // 
-            // labelEconomy_PSV
-            // 
-            this.labelEconomy_PSV.AutoSize = true;
-            this.labelEconomy_PSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelEconomy_PSV.Location = new System.Drawing.Point(12, 131);
-            this.labelEconomy_PSV.Name = "labelEconomy_PSV";
-            this.labelEconomy_PSV.Size = new System.Drawing.Size(193, 20);
-            this.labelEconomy_PSV.TabIndex = 9;
-            this.labelEconomy_PSV.Text = "Экономически развита :";
+            this.labelNation_PSV.AutoSize = true;
+            this.labelNation_PSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelNation_PSV.Location = new System.Drawing.Point(276, 226);
+            this.labelNation_PSV.Name = "labelNation_PSV";
+            this.labelNation_PSV.Size = new System.Drawing.Size(146, 20);
+            this.labelNation_PSV.TabIndex = 11;
+            this.labelNation_PSV.Text = "Национальность :";
             // 
             // labelPopulation_PSV
             // 
@@ -203,15 +113,120 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.labelPopulation_PSV.TabIndex = 10;
             this.labelPopulation_PSV.Text = "Кол - во населения :";
             // 
-            // labelNation_PSV
+            // labelEconomy_PSV
             // 
-            this.labelNation_PSV.AutoSize = true;
-            this.labelNation_PSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelNation_PSV.Location = new System.Drawing.Point(276, 226);
-            this.labelNation_PSV.Name = "labelNation_PSV";
-            this.labelNation_PSV.Size = new System.Drawing.Size(146, 20);
-            this.labelNation_PSV.TabIndex = 11;
-            this.labelNation_PSV.Text = "Национальность :";
+            this.labelEconomy_PSV.AutoSize = true;
+            this.labelEconomy_PSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelEconomy_PSV.Location = new System.Drawing.Point(12, 131);
+            this.labelEconomy_PSV.Name = "labelEconomy_PSV";
+            this.labelEconomy_PSV.Size = new System.Drawing.Size(193, 20);
+            this.labelEconomy_PSV.TabIndex = 9;
+            this.labelEconomy_PSV.Text = "Экономически развита :";
+            // 
+            // labelSquare_PSV
+            // 
+            this.labelSquare_PSV.AutoSize = true;
+            this.labelSquare_PSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSquare_PSV.Location = new System.Drawing.Point(276, 131);
+            this.labelSquare_PSV.Name = "labelSquare_PSV";
+            this.labelSquare_PSV.Size = new System.Drawing.Size(142, 20);
+            this.labelSquare_PSV.TabIndex = 8;
+            this.labelSquare_PSV.Text = "Площадь в км^2 :";
+            // 
+            // labelCapital_PSV
+            // 
+            this.labelCapital_PSV.AutoSize = true;
+            this.labelCapital_PSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCapital_PSV.Location = new System.Drawing.Point(309, 36);
+            this.labelCapital_PSV.Name = "labelCapital_PSV";
+            this.labelCapital_PSV.Size = new System.Drawing.Size(83, 20);
+            this.labelCapital_PSV.TabIndex = 7;
+            this.labelCapital_PSV.Text = "Столица :";
+            // 
+            // textBoxNation_PSV
+            // 
+            this.textBoxNation_PSV.Location = new System.Drawing.Point(273, 249);
+            this.textBoxNation_PSV.Multiline = true;
+            this.textBoxNation_PSV.Name = "textBoxNation_PSV";
+            this.textBoxNation_PSV.Size = new System.Drawing.Size(150, 33);
+            this.textBoxNation_PSV.TabIndex = 6;
+            // 
+            // textBoxPopulation_PSV
+            // 
+            this.textBoxPopulation_PSV.Location = new System.Drawing.Point(25, 249);
+            this.textBoxPopulation_PSV.Multiline = true;
+            this.textBoxPopulation_PSV.Name = "textBoxPopulation_PSV";
+            this.textBoxPopulation_PSV.Size = new System.Drawing.Size(150, 33);
+            this.textBoxPopulation_PSV.TabIndex = 5;
+            // 
+            // textBoxEconomy_PSV
+            // 
+            this.textBoxEconomy_PSV.Location = new System.Drawing.Point(273, 154);
+            this.textBoxEconomy_PSV.Multiline = true;
+            this.textBoxEconomy_PSV.Name = "textBoxEconomy_PSV";
+            this.textBoxEconomy_PSV.Size = new System.Drawing.Size(150, 33);
+            this.textBoxEconomy_PSV.TabIndex = 4;
+            // 
+            // textBoxSquare_PSV
+            // 
+            this.textBoxSquare_PSV.Location = new System.Drawing.Point(25, 154);
+            this.textBoxSquare_PSV.Multiline = true;
+            this.textBoxSquare_PSV.Name = "textBoxSquare_PSV";
+            this.textBoxSquare_PSV.Size = new System.Drawing.Size(150, 33);
+            this.textBoxSquare_PSV.TabIndex = 3;
+            // 
+            // textBoxCapital_PSV
+            // 
+            this.textBoxCapital_PSV.Location = new System.Drawing.Point(273, 61);
+            this.textBoxCapital_PSV.Multiline = true;
+            this.textBoxCapital_PSV.Name = "textBoxCapital_PSV";
+            this.textBoxCapital_PSV.Size = new System.Drawing.Size(150, 33);
+            this.textBoxCapital_PSV.TabIndex = 2;
+            // 
+            // labelCountryName_PSV
+            // 
+            this.labelCountryName_PSV.AutoSize = true;
+            this.labelCountryName_PSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCountryName_PSV.Location = new System.Drawing.Point(25, 36);
+            this.labelCountryName_PSV.Name = "labelCountryName_PSV";
+            this.labelCountryName_PSV.Size = new System.Drawing.Size(150, 20);
+            this.labelCountryName_PSV.TabIndex = 1;
+            this.labelCountryName_PSV.Text = "Название страны :";
+            // 
+            // textBoxCountryName_PSV
+            // 
+            this.textBoxCountryName_PSV.Location = new System.Drawing.Point(25, 61);
+            this.textBoxCountryName_PSV.Multiline = true;
+            this.textBoxCountryName_PSV.Name = "textBoxCountryName_PSV";
+            this.textBoxCountryName_PSV.Size = new System.Drawing.Size(150, 33);
+            this.textBoxCountryName_PSV.TabIndex = 0;
+            // 
+            // panelFill_PSV
+            // 
+            this.panelFill_PSV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelFill_PSV.Location = new System.Drawing.Point(449, 100);
+            this.panelFill_PSV.Name = "panelFill_PSV";
+            this.panelFill_PSV.Size = new System.Drawing.Size(351, 350);
+            this.panelFill_PSV.TabIndex = 2;
+            // 
+            // splitterPanel_PSV
+            // 
+            this.splitterPanel_PSV.Location = new System.Drawing.Point(449, 100);
+            this.splitterPanel_PSV.Name = "splitterPanel_PSV";
+            this.splitterPanel_PSV.Size = new System.Drawing.Size(3, 350);
+            this.splitterPanel_PSV.TabIndex = 3;
+            this.splitterPanel_PSV.TabStop = false;
+            // 
+            // labelName_PSV
+            // 
+            this.labelName_PSV.AutoSize = true;
+            this.labelName_PSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelName_PSV.ForeColor = System.Drawing.Color.White;
+            this.labelName_PSV.Location = new System.Drawing.Point(170, 9);
+            this.labelName_PSV.Name = "labelName_PSV";
+            this.labelName_PSV.Size = new System.Drawing.Size(438, 73);
+            this.labelName_PSV.TabIndex = 0;
+            this.labelName_PSV.Text = "ГЕОГРАФИЯ";
             // 
             // FormMain
             // 
@@ -225,6 +240,8 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "География";
+            this.panelTop_PSV.ResumeLayout(false);
+            this.panelTop_PSV.PerformLayout();
             this.panelLeft_PSV.ResumeLayout(false);
             this.groupBox.ResumeLayout(false);
             this.groupBox.PerformLayout();
@@ -251,6 +268,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
         private System.Windows.Forms.TextBox textBoxCountryName_PSV;
         private System.Windows.Forms.Panel panelFill_PSV;
         private System.Windows.Forms.Splitter splitterPanel_PSV;
+        private System.Windows.Forms.Label labelName_PSV;
     }
 }
 
