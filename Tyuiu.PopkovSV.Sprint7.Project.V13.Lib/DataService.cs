@@ -13,7 +13,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13.Lib
         {
             string[] str = File.ReadAllLines(path);
 
-            //определение количества столбцов и строк 
+            //определение количества столбцов и строк  
             int columns = str[0].Split(';').Length;
             int rows = str.Length;
 
