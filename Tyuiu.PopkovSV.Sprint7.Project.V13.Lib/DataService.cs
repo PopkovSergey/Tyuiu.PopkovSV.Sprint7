@@ -7,7 +7,7 @@ using System.IO;
 
 namespace Tyuiu.PopkovSV.Sprint7.Project.V13.Lib
 {
-    public class DataService
+    public class DataService 
     {
         public string[,] LoadFromDataFile(string path)
         {
