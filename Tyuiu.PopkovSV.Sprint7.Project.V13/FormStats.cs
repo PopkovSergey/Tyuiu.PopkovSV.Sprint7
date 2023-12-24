@@ -7,19 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
-using Tyuiu.PopkovSV.Sprint7.Project.V13.Lib;
 namespace Tyuiu.PopkovSV.Sprint7.Project.V13
 {
-    public partial class FormMain : Form
+    public partial class FormStats : Form
     {
-        public FormMain()
+        public FormStats()
         {
             InitializeComponent();
         }
-
-        
-
     }
 }

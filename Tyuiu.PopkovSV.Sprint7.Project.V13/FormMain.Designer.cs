@@ -45,7 +45,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.textBoxCountry_PSV = new System.Windows.Forms.TextBox();
             this.textBoxAddArea_PSV = new System.Windows.Forms.TextBox();
             this.textBoxAddCapital_PSV = new System.Windows.Forms.TextBox();
-            this.textBoxSumRoom_FDR = new System.Windows.Forms.TextBox();
+            this.textBoxAddNational_PSV = new System.Windows.Forms.TextBox();
             this.textBoxAddPopulation_PSV = new System.Windows.Forms.TextBox();
             this.radioButtonYes_PSV = new System.Windows.Forms.RadioButton();
             this.radioButtonNo_PSV = new System.Windows.Forms.RadioButton();
@@ -54,25 +54,36 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.labelAddArea_PSV = new System.Windows.Forms.Label();
             this.labelAddDevelop_PSV = new System.Windows.Forms.Label();
             this.labelAddPopulation_PSV = new System.Windows.Forms.Label();
-            this.labelSumRoom_FDR = new System.Windows.Forms.Label();
+            this.labelAddNational_PSV = new System.Windows.Forms.Label();
             this.groupBoxNewCountry_PSV = new System.Windows.Forms.GroupBox();
             this.groupBoxMain_PSV = new System.Windows.Forms.GroupBox();
+            this.groupBoxSearch_PSV = new System.Windows.Forms.GroupBox();
+            this.labelColumns_PSV = new System.Windows.Forms.Label();
+            this.labelWhatSearch_PSV = new System.Windows.Forms.Label();
+            this.textBoxColumns_PSV = new System.Windows.Forms.TextBox();
+            this.textBoxWhatSearch_PSV = new System.Windows.Forms.TextBox();
+            this.buttonSearch_PSV = new System.Windows.Forms.Button();
             this.groupBoxDelete_PSV = new System.Windows.Forms.GroupBox();
             this.labelDelete_PSV = new System.Windows.Forms.Label();
             this.textBoxDelete_PSV = new System.Windows.Forms.TextBox();
-            this.groupBoxSearch_PSV = new System.Windows.Forms.GroupBox();
-            this.buttonSearch_PSV = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBoxColumns_PSV = new System.Windows.Forms.TextBox();
-            this.labelWhatSearch_PSV = new System.Windows.Forms.Label();
-            this.labelColumns_PSV = new System.Windows.Forms.Label();
+            this.groupBoxSort_PSV = new System.Windows.Forms.GroupBox();
+            this.menuStrip1Sort_PSV = new System.Windows.Forms.MenuStrip();
+            this.ToolStripMenuItemSortMax_PSV = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemSortMin_PSV = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemAreaMax_PSV = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemPopulationMax_PSV = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemAreaMin_PSV = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemPopulationMin_PSV = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonStats_PSV = new System.Windows.Forms.Button();
             this.panelTop_PSV.SuspendLayout();
             this.groupBoxData_PSV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMain_PSV)).BeginInit();
             this.groupBoxNewCountry_PSV.SuspendLayout();
             this.groupBoxMain_PSV.SuspendLayout();
-            this.groupBoxDelete_PSV.SuspendLayout();
             this.groupBoxSearch_PSV.SuspendLayout();
+            this.groupBoxDelete_PSV.SuspendLayout();
+            this.groupBoxSort_PSV.SuspendLayout();
+            this.menuStrip1Sort_PSV.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelName_PSV
@@ -90,6 +101,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             // panelTop_PSV
             // 
             this.panelTop_PSV.BackColor = System.Drawing.Color.Turquoise;
+            this.panelTop_PSV.Controls.Add(this.buttonStats_PSV);
             this.panelTop_PSV.Controls.Add(this.buttonHelp_PSV);
             this.panelTop_PSV.Controls.Add(this.buttonReturn_PSV);
             this.panelTop_PSV.Controls.Add(this.buttonInfo_PSV);
@@ -115,13 +127,12 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             // buttonReturn_PSV
             // 
             this.buttonReturn_PSV.Image = ((System.Drawing.Image)(resources.GetObject("buttonReturn_PSV.Image")));
-            this.buttonReturn_PSV.Location = new System.Drawing.Point(699, 11);
+            this.buttonReturn_PSV.Location = new System.Drawing.Point(738, 11);
             this.buttonReturn_PSV.Margin = new System.Windows.Forms.Padding(4);
             this.buttonReturn_PSV.Name = "buttonReturn_PSV";
             this.buttonReturn_PSV.Size = new System.Drawing.Size(136, 91);
             this.buttonReturn_PSV.TabIndex = 16;
             this.buttonReturn_PSV.UseVisualStyleBackColor = true;
-            this.buttonReturn_PSV.Click += new System.EventHandler(this.buttonReturn_PSV_Click);
             // 
             // buttonInfo_PSV
             // 
@@ -136,13 +147,12 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             // buttonOpen_PSV
             // 
             this.buttonOpen_PSV.Image = ((System.Drawing.Image)(resources.GetObject("buttonOpen_PSV.Image")));
-            this.buttonOpen_PSV.Location = new System.Drawing.Point(555, 11);
+            this.buttonOpen_PSV.Location = new System.Drawing.Point(594, 11);
             this.buttonOpen_PSV.Margin = new System.Windows.Forms.Padding(4);
             this.buttonOpen_PSV.Name = "buttonOpen_PSV";
             this.buttonOpen_PSV.Size = new System.Drawing.Size(136, 91);
             this.buttonOpen_PSV.TabIndex = 12;
             this.buttonOpen_PSV.UseVisualStyleBackColor = true;
-            this.buttonOpen_PSV.Click += new System.EventHandler(this.buttonOpen_PSV_Click);
             // 
             // openFileDialogMain_PSV
             // 
@@ -151,9 +161,9 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             // groupBoxData_PSV
             // 
             this.groupBoxData_PSV.Controls.Add(this.dataGridViewMain_PSV);
-            this.groupBoxData_PSV.Location = new System.Drawing.Point(671, 130);
+            this.groupBoxData_PSV.Location = new System.Drawing.Point(671, 182);
             this.groupBoxData_PSV.Name = "groupBoxData_PSV";
-            this.groupBoxData_PSV.Size = new System.Drawing.Size(712, 553);
+            this.groupBoxData_PSV.Size = new System.Drawing.Size(712, 501);
             this.groupBoxData_PSV.TabIndex = 19;
             this.groupBoxData_PSV.TabStop = false;
             this.groupBoxData_PSV.Text = "Информация";
@@ -170,7 +180,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.dataGridViewMain_PSV.RowHeadersVisible = false;
             this.dataGridViewMain_PSV.RowHeadersWidth = 51;
             this.dataGridViewMain_PSV.RowTemplate.Height = 24;
-            this.dataGridViewMain_PSV.Size = new System.Drawing.Size(700, 529);
+            this.dataGridViewMain_PSV.Size = new System.Drawing.Size(700, 477);
             this.dataGridViewMain_PSV.TabIndex = 0;
             // 
             // buttonAdd_PSV
@@ -182,7 +192,6 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.buttonAdd_PSV.Size = new System.Drawing.Size(100, 62);
             this.buttonAdd_PSV.TabIndex = 14;
             this.buttonAdd_PSV.UseVisualStyleBackColor = true;
-            this.buttonAdd_PSV.Click += new System.EventHandler(this.buttonAdd_PSV_Click);
             // 
             // buttonDelete_PSV
             // 
@@ -193,7 +202,6 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.buttonDelete_PSV.Size = new System.Drawing.Size(100, 62);
             this.buttonDelete_PSV.TabIndex = 15;
             this.buttonDelete_PSV.UseVisualStyleBackColor = true;
-            this.buttonDelete_PSV.Click += new System.EventHandler(this.buttonDelete_PSV_Click);
             // 
             // textBoxCountry_PSV
             // 
@@ -216,12 +224,12 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.textBoxAddCapital_PSV.Size = new System.Drawing.Size(127, 22);
             this.textBoxAddCapital_PSV.TabIndex = 2;
             // 
-            // textBoxSumRoom_FDR
+            // textBoxAddNational_PSV
             // 
-            this.textBoxSumRoom_FDR.Location = new System.Drawing.Point(383, 84);
-            this.textBoxSumRoom_FDR.Name = "textBoxSumRoom_FDR";
-            this.textBoxSumRoom_FDR.Size = new System.Drawing.Size(226, 22);
-            this.textBoxSumRoom_FDR.TabIndex = 3;
+            this.textBoxAddNational_PSV.Location = new System.Drawing.Point(383, 84);
+            this.textBoxAddNational_PSV.Name = "textBoxAddNational_PSV";
+            this.textBoxAddNational_PSV.Size = new System.Drawing.Size(226, 22);
+            this.textBoxAddNational_PSV.TabIndex = 3;
             // 
             // textBoxAddPopulation_PSV
             // 
@@ -298,19 +306,19 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.labelAddPopulation_PSV.TabIndex = 12;
             this.labelAddPopulation_PSV.Text = "Население, чел:";
             // 
-            // labelSumRoom_FDR
+            // labelAddNational_PSV
             // 
-            this.labelSumRoom_FDR.AutoSize = true;
-            this.labelSumRoom_FDR.Location = new System.Drawing.Point(383, 64);
-            this.labelSumRoom_FDR.Name = "labelSumRoom_FDR";
-            this.labelSumRoom_FDR.Size = new System.Drawing.Size(235, 17);
-            this.labelSumRoom_FDR.TabIndex = 13;
-            this.labelSumRoom_FDR.Text = "Преобладающая национальность:";
+            this.labelAddNational_PSV.AutoSize = true;
+            this.labelAddNational_PSV.Location = new System.Drawing.Point(383, 64);
+            this.labelAddNational_PSV.Name = "labelAddNational_PSV";
+            this.labelAddNational_PSV.Size = new System.Drawing.Size(235, 17);
+            this.labelAddNational_PSV.TabIndex = 13;
+            this.labelAddNational_PSV.Text = "Преобладающая национальность:";
             // 
             // groupBoxNewCountry_PSV
             // 
             this.groupBoxNewCountry_PSV.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.groupBoxNewCountry_PSV.Controls.Add(this.labelSumRoom_FDR);
+            this.groupBoxNewCountry_PSV.Controls.Add(this.labelAddNational_PSV);
             this.groupBoxNewCountry_PSV.Controls.Add(this.labelAddPopulation_PSV);
             this.groupBoxNewCountry_PSV.Controls.Add(this.labelAddDevelop_PSV);
             this.groupBoxNewCountry_PSV.Controls.Add(this.labelAddArea_PSV);
@@ -320,7 +328,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.groupBoxNewCountry_PSV.Controls.Add(this.radioButtonNo_PSV);
             this.groupBoxNewCountry_PSV.Controls.Add(this.radioButtonYes_PSV);
             this.groupBoxNewCountry_PSV.Controls.Add(this.textBoxAddPopulation_PSV);
-            this.groupBoxNewCountry_PSV.Controls.Add(this.textBoxSumRoom_FDR);
+            this.groupBoxNewCountry_PSV.Controls.Add(this.textBoxAddNational_PSV);
             this.groupBoxNewCountry_PSV.Controls.Add(this.textBoxAddCapital_PSV);
             this.groupBoxNewCountry_PSV.Controls.Add(this.textBoxAddArea_PSV);
             this.groupBoxNewCountry_PSV.Controls.Add(this.textBoxCountry_PSV);
@@ -342,6 +350,61 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.groupBoxMain_PSV.TabIndex = 1;
             this.groupBoxMain_PSV.TabStop = false;
             this.groupBoxMain_PSV.Text = "Главная";
+            // 
+            // groupBoxSearch_PSV
+            // 
+            this.groupBoxSearch_PSV.Controls.Add(this.labelColumns_PSV);
+            this.groupBoxSearch_PSV.Controls.Add(this.labelWhatSearch_PSV);
+            this.groupBoxSearch_PSV.Controls.Add(this.textBoxColumns_PSV);
+            this.groupBoxSearch_PSV.Controls.Add(this.textBoxWhatSearch_PSV);
+            this.groupBoxSearch_PSV.Controls.Add(this.buttonSearch_PSV);
+            this.groupBoxSearch_PSV.Location = new System.Drawing.Point(9, 21);
+            this.groupBoxSearch_PSV.Name = "groupBoxSearch_PSV";
+            this.groupBoxSearch_PSV.Size = new System.Drawing.Size(628, 87);
+            this.groupBoxSearch_PSV.TabIndex = 16;
+            this.groupBoxSearch_PSV.TabStop = false;
+            this.groupBoxSearch_PSV.Text = "Поиск:";
+            // 
+            // labelColumns_PSV
+            // 
+            this.labelColumns_PSV.AutoSize = true;
+            this.labelColumns_PSV.Location = new System.Drawing.Point(200, 29);
+            this.labelColumns_PSV.Name = "labelColumns_PSV";
+            this.labelColumns_PSV.Size = new System.Drawing.Size(113, 17);
+            this.labelColumns_PSV.TabIndex = 24;
+            this.labelColumns_PSV.Text = "Номер столбца:";
+            // 
+            // labelWhatSearch_PSV
+            // 
+            this.labelWhatSearch_PSV.AutoSize = true;
+            this.labelWhatSearch_PSV.Location = new System.Drawing.Point(6, 29);
+            this.labelWhatSearch_PSV.Name = "labelWhatSearch_PSV";
+            this.labelWhatSearch_PSV.Size = new System.Drawing.Size(85, 17);
+            this.labelWhatSearch_PSV.TabIndex = 23;
+            this.labelWhatSearch_PSV.Text = "Что искать:";
+            // 
+            // textBoxColumns_PSV
+            // 
+            this.textBoxColumns_PSV.Location = new System.Drawing.Point(203, 49);
+            this.textBoxColumns_PSV.Name = "textBoxColumns_PSV";
+            this.textBoxColumns_PSV.Size = new System.Drawing.Size(106, 22);
+            this.textBoxColumns_PSV.TabIndex = 22;
+            // 
+            // textBoxWhatSearch_PSV
+            // 
+            this.textBoxWhatSearch_PSV.Location = new System.Drawing.Point(6, 49);
+            this.textBoxWhatSearch_PSV.Name = "textBoxWhatSearch_PSV";
+            this.textBoxWhatSearch_PSV.Size = new System.Drawing.Size(191, 22);
+            this.textBoxWhatSearch_PSV.TabIndex = 21;
+            // 
+            // buttonSearch_PSV
+            // 
+            this.buttonSearch_PSV.Location = new System.Drawing.Point(356, 48);
+            this.buttonSearch_PSV.Name = "buttonSearch_PSV";
+            this.buttonSearch_PSV.Size = new System.Drawing.Size(75, 23);
+            this.buttonSearch_PSV.TabIndex = 20;
+            this.buttonSearch_PSV.Text = "Поиск";
+            this.buttonSearch_PSV.UseVisualStyleBackColor = true;
             // 
             // groupBoxDelete_PSV
             // 
@@ -372,74 +435,93 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.textBoxDelete_PSV.Size = new System.Drawing.Size(170, 22);
             this.textBoxDelete_PSV.TabIndex = 2;
             // 
-            // groupBoxSearch_PSV
+            // groupBoxSort_PSV
             // 
-            this.groupBoxSearch_PSV.Controls.Add(this.labelColumns_PSV);
-            this.groupBoxSearch_PSV.Controls.Add(this.labelWhatSearch_PSV);
-            this.groupBoxSearch_PSV.Controls.Add(this.textBoxColumns_PSV);
-            this.groupBoxSearch_PSV.Controls.Add(this.textBox1);
-            this.groupBoxSearch_PSV.Controls.Add(this.buttonSearch_PSV);
-            this.groupBoxSearch_PSV.Location = new System.Drawing.Point(9, 21);
-            this.groupBoxSearch_PSV.Name = "groupBoxSearch_PSV";
-            this.groupBoxSearch_PSV.Size = new System.Drawing.Size(628, 87);
-            this.groupBoxSearch_PSV.TabIndex = 16;
-            this.groupBoxSearch_PSV.TabStop = false;
-            this.groupBoxSearch_PSV.Text = "Поиск:";
+            this.groupBoxSort_PSV.Controls.Add(this.menuStrip1Sort_PSV);
+            this.groupBoxSort_PSV.Location = new System.Drawing.Point(890, 130);
+            this.groupBoxSort_PSV.Name = "groupBoxSort_PSV";
+            this.groupBoxSort_PSV.Size = new System.Drawing.Size(288, 52);
+            this.groupBoxSort_PSV.TabIndex = 20;
+            this.groupBoxSort_PSV.TabStop = false;
             // 
-            // buttonSearch_PSV
+            // menuStrip1Sort_PSV
             // 
-            this.buttonSearch_PSV.Location = new System.Drawing.Point(356, 48);
-            this.buttonSearch_PSV.Name = "buttonSearch_PSV";
-            this.buttonSearch_PSV.Size = new System.Drawing.Size(75, 23);
-            this.buttonSearch_PSV.TabIndex = 20;
-            this.buttonSearch_PSV.Text = "Поиск";
-            this.buttonSearch_PSV.UseVisualStyleBackColor = true;
+            this.menuStrip1Sort_PSV.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1Sort_PSV.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemSortMax_PSV,
+            this.ToolStripMenuItemSortMin_PSV});
+            this.menuStrip1Sort_PSV.Location = new System.Drawing.Point(3, 18);
+            this.menuStrip1Sort_PSV.Name = "menuStrip1Sort_PSV";
+            this.menuStrip1Sort_PSV.Size = new System.Drawing.Size(282, 28);
+            this.menuStrip1Sort_PSV.TabIndex = 0;
+            this.menuStrip1Sort_PSV.Text = "menuStrip1";
             // 
-            // textBox1
+            // ToolStripMenuItemSortMax_PSV
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 22);
-            this.textBox1.TabIndex = 21;
+            this.ToolStripMenuItemSortMax_PSV.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemAreaMax_PSV,
+            this.ToolStripMenuItemPopulationMax_PSV});
+            this.ToolStripMenuItemSortMax_PSV.Name = "ToolStripMenuItemSortMax_PSV";
+            this.ToolStripMenuItemSortMax_PSV.Size = new System.Drawing.Size(139, 24);
+            this.ToolStripMenuItemSortMax_PSV.Text = "По возрастанию";
             // 
-            // textBoxColumns_PSV
+            // ToolStripMenuItemSortMin_PSV
             // 
-            this.textBoxColumns_PSV.Location = new System.Drawing.Point(203, 49);
-            this.textBoxColumns_PSV.Name = "textBoxColumns_PSV";
-            this.textBoxColumns_PSV.Size = new System.Drawing.Size(106, 22);
-            this.textBoxColumns_PSV.TabIndex = 22;
+            this.ToolStripMenuItemSortMin_PSV.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemAreaMin_PSV,
+            this.ToolStripMenuItemPopulationMin_PSV});
+            this.ToolStripMenuItemSortMin_PSV.Name = "ToolStripMenuItemSortMin_PSV";
+            this.ToolStripMenuItemSortMin_PSV.Size = new System.Drawing.Size(120, 24);
+            this.ToolStripMenuItemSortMin_PSV.Text = "По убыванию";
             // 
-            // labelWhatSearch_PSV
+            // ToolStripMenuItemAreaMax_PSV
             // 
-            this.labelWhatSearch_PSV.AutoSize = true;
-            this.labelWhatSearch_PSV.Location = new System.Drawing.Point(6, 29);
-            this.labelWhatSearch_PSV.Name = "labelWhatSearch_PSV";
-            this.labelWhatSearch_PSV.Size = new System.Drawing.Size(81, 17);
-            this.labelWhatSearch_PSV.TabIndex = 23;
-            this.labelWhatSearch_PSV.Text = "Что искать";
+            this.ToolStripMenuItemAreaMax_PSV.Name = "ToolStripMenuItemAreaMax_PSV";
+            this.ToolStripMenuItemAreaMax_PSV.Size = new System.Drawing.Size(243, 26);
+            this.ToolStripMenuItemAreaMax_PSV.Text = "Площадь территории";
             // 
-            // labelColumns_PSV
+            // ToolStripMenuItemPopulationMax_PSV
             // 
-            this.labelColumns_PSV.AutoSize = true;
-            this.labelColumns_PSV.Location = new System.Drawing.Point(200, 29);
-            this.labelColumns_PSV.Name = "labelColumns_PSV";
-            this.labelColumns_PSV.Size = new System.Drawing.Size(109, 17);
-            this.labelColumns_PSV.TabIndex = 24;
-            this.labelColumns_PSV.Text = "Номер столбца";
+            this.ToolStripMenuItemPopulationMax_PSV.Name = "ToolStripMenuItemPopulationMax_PSV";
+            this.ToolStripMenuItemPopulationMax_PSV.Size = new System.Drawing.Size(243, 26);
+            this.ToolStripMenuItemPopulationMax_PSV.Text = "Кол-во населения";
+            // 
+            // ToolStripMenuItemAreaMin_PSV
+            // 
+            this.ToolStripMenuItemAreaMin_PSV.Name = "ToolStripMenuItemAreaMin_PSV";
+            this.ToolStripMenuItemAreaMin_PSV.Size = new System.Drawing.Size(243, 26);
+            this.ToolStripMenuItemAreaMin_PSV.Text = "Площадь территории";
+            // 
+            // ToolStripMenuItemPopulationMin_PSV
+            // 
+            this.ToolStripMenuItemPopulationMin_PSV.Name = "ToolStripMenuItemPopulationMin_PSV";
+            this.ToolStripMenuItemPopulationMin_PSV.Size = new System.Drawing.Size(243, 26);
+            this.ToolStripMenuItemPopulationMin_PSV.Text = "Кол-во населения";
+            // 
+            // buttonStats_PSV
+            // 
+            this.buttonStats_PSV.Location = new System.Drawing.Point(882, 11);
+            this.buttonStats_PSV.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonStats_PSV.Name = "buttonStats_PSV";
+            this.buttonStats_PSV.Size = new System.Drawing.Size(302, 91);
+            this.buttonStats_PSV.TabIndex = 17;
+            this.buttonStats_PSV.Text = "Статистические данные";
+            this.buttonStats_PSV.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1395, 690);
+            this.Controls.Add(this.groupBoxSort_PSV);
             this.Controls.Add(this.groupBoxMain_PSV);
             this.Controls.Add(this.groupBoxData_PSV);
             this.Controls.Add(this.panelTop_PSV);
+            this.MainMenuStrip = this.menuStrip1Sort_PSV;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "География";
-            this.Load += new System.EventHandler(this.FormMain_Load);
             this.panelTop_PSV.ResumeLayout(false);
             this.panelTop_PSV.PerformLayout();
             this.groupBoxData_PSV.ResumeLayout(false);
@@ -447,10 +529,14 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.groupBoxNewCountry_PSV.ResumeLayout(false);
             this.groupBoxNewCountry_PSV.PerformLayout();
             this.groupBoxMain_PSV.ResumeLayout(false);
-            this.groupBoxDelete_PSV.ResumeLayout(false);
-            this.groupBoxDelete_PSV.PerformLayout();
             this.groupBoxSearch_PSV.ResumeLayout(false);
             this.groupBoxSearch_PSV.PerformLayout();
+            this.groupBoxDelete_PSV.ResumeLayout(false);
+            this.groupBoxDelete_PSV.PerformLayout();
+            this.groupBoxSort_PSV.ResumeLayout(false);
+            this.groupBoxSort_PSV.PerformLayout();
+            this.menuStrip1Sort_PSV.ResumeLayout(false);
+            this.menuStrip1Sort_PSV.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -471,7 +557,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
         private System.Windows.Forms.TextBox textBoxCountry_PSV;
         private System.Windows.Forms.TextBox textBoxAddArea_PSV;
         private System.Windows.Forms.TextBox textBoxAddCapital_PSV;
-        private System.Windows.Forms.TextBox textBoxSumRoom_FDR;
+        private System.Windows.Forms.TextBox textBoxAddNational_PSV;
         private System.Windows.Forms.TextBox textBoxAddPopulation_PSV;
         private System.Windows.Forms.RadioButton radioButtonYes_PSV;
         private System.Windows.Forms.RadioButton radioButtonNo_PSV;
@@ -480,18 +566,27 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
         private System.Windows.Forms.Label labelAddArea_PSV;
         private System.Windows.Forms.Label labelAddDevelop_PSV;
         private System.Windows.Forms.Label labelAddPopulation_PSV;
-        private System.Windows.Forms.Label labelSumRoom_FDR;
+        private System.Windows.Forms.Label labelAddNational_PSV;
         private System.Windows.Forms.GroupBox groupBoxNewCountry_PSV;
         private System.Windows.Forms.GroupBox groupBoxMain_PSV;
         private System.Windows.Forms.GroupBox groupBoxSearch_PSV;
         private System.Windows.Forms.Label labelColumns_PSV;
         private System.Windows.Forms.Label labelWhatSearch_PSV;
         private System.Windows.Forms.TextBox textBoxColumns_PSV;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxWhatSearch_PSV;
         private System.Windows.Forms.Button buttonSearch_PSV;
         private System.Windows.Forms.GroupBox groupBoxDelete_PSV;
         private System.Windows.Forms.Label labelDelete_PSV;
         private System.Windows.Forms.TextBox textBoxDelete_PSV;
+        private System.Windows.Forms.GroupBox groupBoxSort_PSV;
+        private System.Windows.Forms.MenuStrip menuStrip1Sort_PSV;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemSortMax_PSV;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemSortMin_PSV;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemAreaMax_PSV;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemPopulationMax_PSV;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemAreaMin_PSV;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemPopulationMin_PSV;
+        private System.Windows.Forms.Button buttonStats_PSV;
     }
 }
 
