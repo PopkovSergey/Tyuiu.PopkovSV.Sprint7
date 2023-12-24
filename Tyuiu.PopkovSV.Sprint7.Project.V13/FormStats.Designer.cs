@@ -37,24 +37,19 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.buttonNational_PSV = new System.Windows.Forms.Button();
             this.groupBoxStats_PSV = new System.Windows.Forms.GroupBox();
             this.buttonViewStats_PSV = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBoxAveragePopulation_PSV = new System.Windows.Forms.TextBox();
+            this.labelAveragePopulation_PSV = new System.Windows.Forms.Label();
+            this.labelAverageArea_PSV = new System.Windows.Forms.Label();
+            this.textBoxAverageArea_PSV = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.chartStats_PSV)).BeginInit();
             this.groupBoxStats_PSV.SuspendLayout();
             this.SuspendLayout();
             // 
             // chartStats_PSV
             // 
+            this.chartStats_PSV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             chartArea1.Name = "ChartArea1";
             this.chartStats_PSV.ChartAreas.Add(chartArea1);
             legend1.Enabled = false;
@@ -72,6 +67,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             // 
             // buttonDevelop_PSV
             // 
+            this.buttonDevelop_PSV.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.buttonDevelop_PSV.Location = new System.Drawing.Point(12, 12);
             this.buttonDevelop_PSV.Name = "buttonDevelop_PSV";
             this.buttonDevelop_PSV.Size = new System.Drawing.Size(238, 162);
@@ -81,6 +77,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             // 
             // buttonNational_PSV
             // 
+            this.buttonNational_PSV.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.buttonNational_PSV.Location = new System.Drawing.Point(12, 179);
             this.buttonNational_PSV.Name = "buttonNational_PSV";
             this.buttonNational_PSV.Size = new System.Drawing.Size(238, 162);
@@ -90,18 +87,12 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             // 
             // groupBoxStats_PSV
             // 
-            this.groupBoxStats_PSV.Controls.Add(this.label5);
-            this.groupBoxStats_PSV.Controls.Add(this.textBox5);
-            this.groupBoxStats_PSV.Controls.Add(this.label6);
-            this.groupBoxStats_PSV.Controls.Add(this.textBox6);
-            this.groupBoxStats_PSV.Controls.Add(this.label3);
-            this.groupBoxStats_PSV.Controls.Add(this.textBox3);
-            this.groupBoxStats_PSV.Controls.Add(this.label4);
-            this.groupBoxStats_PSV.Controls.Add(this.textBox4);
-            this.groupBoxStats_PSV.Controls.Add(this.label2);
-            this.groupBoxStats_PSV.Controls.Add(this.textBox2);
-            this.groupBoxStats_PSV.Controls.Add(this.label1);
-            this.groupBoxStats_PSV.Controls.Add(this.textBox1);
+            this.groupBoxStats_PSV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxStats_PSV.Controls.Add(this.labelAverageArea_PSV);
+            this.groupBoxStats_PSV.Controls.Add(this.textBoxAverageArea_PSV);
+            this.groupBoxStats_PSV.Controls.Add(this.labelAveragePopulation_PSV);
+            this.groupBoxStats_PSV.Controls.Add(this.textBoxAveragePopulation_PSV);
             this.groupBoxStats_PSV.Controls.Add(this.buttonViewStats_PSV);
             this.groupBoxStats_PSV.Location = new System.Drawing.Point(12, 347);
             this.groupBoxStats_PSV.Name = "groupBoxStats_PSV";
@@ -119,101 +110,43 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.buttonViewStats_PSV.Text = "Отобразить статистику";
             this.buttonViewStats_PSV.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // textBoxAveragePopulation_PSV
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 108);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 1;
+            this.textBoxAveragePopulation_PSV.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBoxAveragePopulation_PSV.Location = new System.Drawing.Point(296, 83);
+            this.textBoxAveragePopulation_PSV.Name = "textBoxAveragePopulation_PSV";
+            this.textBoxAveragePopulation_PSV.ReadOnly = true;
+            this.textBoxAveragePopulation_PSV.Size = new System.Drawing.Size(217, 22);
+            this.textBoxAveragePopulation_PSV.TabIndex = 1;
             // 
-            // label1
+            // labelAveragePopulation_PSV
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(145, 88);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.labelAveragePopulation_PSV.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelAveragePopulation_PSV.AutoSize = true;
+            this.labelAveragePopulation_PSV.Location = new System.Drawing.Point(293, 63);
+            this.labelAveragePopulation_PSV.Name = "labelAveragePopulation_PSV";
+            this.labelAveragePopulation_PSV.Size = new System.Drawing.Size(220, 17);
+            this.labelAveragePopulation_PSV.TabIndex = 2;
+            this.labelAveragePopulation_PSV.Text = "Ср. Значение кол-ва населения";
             // 
-            // label2
+            // labelAverageArea_PSV
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(145, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
+            this.labelAverageArea_PSV.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelAverageArea_PSV.AutoSize = true;
+            this.labelAverageArea_PSV.Location = new System.Drawing.Point(293, 18);
+            this.labelAverageArea_PSV.Name = "labelAverageArea_PSV";
+            this.labelAverageArea_PSV.Size = new System.Drawing.Size(241, 17);
+            this.labelAverageArea_PSV.TabIndex = 4;
+            this.labelAverageArea_PSV.Text = "Ср. значение площади территории";
             // 
-            // textBox2
+            // textBoxAverageArea_PSV
             // 
-            this.textBox2.Location = new System.Drawing.Point(148, 38);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(337, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "label3";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(340, 32);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(337, 82);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 17);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "label4";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(340, 102);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(574, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 17);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "label5";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(577, 32);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 11;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(574, 82);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 17);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "label6";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(577, 102);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 9;
+            this.textBoxAverageArea_PSV.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBoxAverageArea_PSV.Location = new System.Drawing.Point(296, 38);
+            this.textBoxAverageArea_PSV.Name = "textBoxAverageArea_PSV";
+            this.textBoxAverageArea_PSV.ReadOnly = true;
+            this.textBoxAverageArea_PSV.Size = new System.Drawing.Size(217, 22);
+            this.textBoxAverageArea_PSV.TabIndex = 3;
             // 
             // FormStats
             // 
@@ -239,18 +172,10 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
         private System.Windows.Forms.Button buttonDevelop_PSV;
         private System.Windows.Forms.Button buttonNational_PSV;
         private System.Windows.Forms.GroupBox groupBoxStats_PSV;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelAverageArea_PSV;
+        private System.Windows.Forms.TextBox textBoxAverageArea_PSV;
+        private System.Windows.Forms.Label labelAveragePopulation_PSV;
+        private System.Windows.Forms.TextBox textBoxAveragePopulation_PSV;
         private System.Windows.Forms.Button buttonViewStats_PSV;
     }
 }
