@@ -36,11 +36,11 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.buttonDevelop_PSV = new System.Windows.Forms.Button();
             this.buttonNational_PSV = new System.Windows.Forms.Button();
             this.groupBoxStats_PSV = new System.Windows.Forms.GroupBox();
-            this.buttonViewStats_PSV = new System.Windows.Forms.Button();
-            this.textBoxAveragePopulation_PSV = new System.Windows.Forms.TextBox();
-            this.labelAveragePopulation_PSV = new System.Windows.Forms.Label();
             this.labelAverageArea_PSV = new System.Windows.Forms.Label();
             this.textBoxAverageArea_PSV = new System.Windows.Forms.TextBox();
+            this.labelAveragePopulation_PSV = new System.Windows.Forms.Label();
+            this.textBoxAveragePopulation_PSV = new System.Windows.Forms.TextBox();
+            this.buttonViewStats_PSV = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chartStats_PSV)).BeginInit();
             this.groupBoxStats_PSV.SuspendLayout();
             this.SuspendLayout();
@@ -74,6 +74,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.buttonDevelop_PSV.TabIndex = 1;
             this.buttonDevelop_PSV.Text = "График \r\n\"Кол-во стран/является ли страна развитой\"";
             this.buttonDevelop_PSV.UseVisualStyleBackColor = true;
+            this.buttonDevelop_PSV.Click += new System.EventHandler(this.buttonDevelop_PSV_Click);
             // 
             // buttonNational_PSV
             // 
@@ -84,6 +85,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.buttonNational_PSV.TabIndex = 2;
             this.buttonNational_PSV.Text = "График \r\n\"Кол-во стран/преобладающая национальность\"";
             this.buttonNational_PSV.UseVisualStyleBackColor = true;
+            this.buttonNational_PSV.Click += new System.EventHandler(this.buttonNational_PSV_Click);
             // 
             // groupBoxStats_PSV
             // 
@@ -101,6 +103,44 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.groupBoxStats_PSV.TabStop = false;
             this.groupBoxStats_PSV.Text = "Статистика";
             // 
+            // labelAverageArea_PSV
+            // 
+            this.labelAverageArea_PSV.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelAverageArea_PSV.AutoSize = true;
+            this.labelAverageArea_PSV.Location = new System.Drawing.Point(293, 18);
+            this.labelAverageArea_PSV.Name = "labelAverageArea_PSV";
+            this.labelAverageArea_PSV.Size = new System.Drawing.Size(280, 17);
+            this.labelAverageArea_PSV.TabIndex = 4;
+            this.labelAverageArea_PSV.Text = "Ср. значение площади территории, км^2";
+            // 
+            // textBoxAverageArea_PSV
+            // 
+            this.textBoxAverageArea_PSV.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBoxAverageArea_PSV.Location = new System.Drawing.Point(296, 38);
+            this.textBoxAverageArea_PSV.Name = "textBoxAverageArea_PSV";
+            this.textBoxAverageArea_PSV.ReadOnly = true;
+            this.textBoxAverageArea_PSV.Size = new System.Drawing.Size(277, 22);
+            this.textBoxAverageArea_PSV.TabIndex = 3;
+            // 
+            // labelAveragePopulation_PSV
+            // 
+            this.labelAveragePopulation_PSV.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelAveragePopulation_PSV.AutoSize = true;
+            this.labelAveragePopulation_PSV.Location = new System.Drawing.Point(293, 63);
+            this.labelAveragePopulation_PSV.Name = "labelAveragePopulation_PSV";
+            this.labelAveragePopulation_PSV.Size = new System.Drawing.Size(252, 17);
+            this.labelAveragePopulation_PSV.TabIndex = 2;
+            this.labelAveragePopulation_PSV.Text = "Ср. Значение кол-ва населения, чел\r\n";
+            // 
+            // textBoxAveragePopulation_PSV
+            // 
+            this.textBoxAveragePopulation_PSV.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBoxAveragePopulation_PSV.Location = new System.Drawing.Point(296, 83);
+            this.textBoxAveragePopulation_PSV.Name = "textBoxAveragePopulation_PSV";
+            this.textBoxAveragePopulation_PSV.ReadOnly = true;
+            this.textBoxAveragePopulation_PSV.Size = new System.Drawing.Size(277, 22);
+            this.textBoxAveragePopulation_PSV.TabIndex = 1;
+            // 
             // buttonViewStats_PSV
             // 
             this.buttonViewStats_PSV.Location = new System.Drawing.Point(3, 18);
@@ -109,44 +149,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.buttonViewStats_PSV.TabIndex = 0;
             this.buttonViewStats_PSV.Text = "Отобразить статистику";
             this.buttonViewStats_PSV.UseVisualStyleBackColor = true;
-            // 
-            // textBoxAveragePopulation_PSV
-            // 
-            this.textBoxAveragePopulation_PSV.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxAveragePopulation_PSV.Location = new System.Drawing.Point(296, 83);
-            this.textBoxAveragePopulation_PSV.Name = "textBoxAveragePopulation_PSV";
-            this.textBoxAveragePopulation_PSV.ReadOnly = true;
-            this.textBoxAveragePopulation_PSV.Size = new System.Drawing.Size(217, 22);
-            this.textBoxAveragePopulation_PSV.TabIndex = 1;
-            // 
-            // labelAveragePopulation_PSV
-            // 
-            this.labelAveragePopulation_PSV.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelAveragePopulation_PSV.AutoSize = true;
-            this.labelAveragePopulation_PSV.Location = new System.Drawing.Point(293, 63);
-            this.labelAveragePopulation_PSV.Name = "labelAveragePopulation_PSV";
-            this.labelAveragePopulation_PSV.Size = new System.Drawing.Size(220, 17);
-            this.labelAveragePopulation_PSV.TabIndex = 2;
-            this.labelAveragePopulation_PSV.Text = "Ср. Значение кол-ва населения";
-            // 
-            // labelAverageArea_PSV
-            // 
-            this.labelAverageArea_PSV.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelAverageArea_PSV.AutoSize = true;
-            this.labelAverageArea_PSV.Location = new System.Drawing.Point(293, 18);
-            this.labelAverageArea_PSV.Name = "labelAverageArea_PSV";
-            this.labelAverageArea_PSV.Size = new System.Drawing.Size(241, 17);
-            this.labelAverageArea_PSV.TabIndex = 4;
-            this.labelAverageArea_PSV.Text = "Ср. значение площади территории";
-            // 
-            // textBoxAverageArea_PSV
-            // 
-            this.textBoxAverageArea_PSV.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxAverageArea_PSV.Location = new System.Drawing.Point(296, 38);
-            this.textBoxAverageArea_PSV.Name = "textBoxAverageArea_PSV";
-            this.textBoxAverageArea_PSV.ReadOnly = true;
-            this.textBoxAverageArea_PSV.Size = new System.Drawing.Size(217, 22);
-            this.textBoxAverageArea_PSV.TabIndex = 3;
+            this.buttonViewStats_PSV.Click += new System.EventHandler(this.buttonViewStats_PSV_Click);
             // 
             // FormStats
             // 
@@ -158,6 +161,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.Controls.Add(this.buttonDevelop_PSV);
             this.Controls.Add(this.chartStats_PSV);
             this.Name = "FormStats";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Статистические данные";
             ((System.ComponentModel.ISupportInitialize)(this.chartStats_PSV)).EndInit();
             this.groupBoxStats_PSV.ResumeLayout(false);

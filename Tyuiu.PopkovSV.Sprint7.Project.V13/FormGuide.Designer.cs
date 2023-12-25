@@ -36,9 +36,10 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             // 
             // buttonOkGuide_PSV
             // 
-            this.buttonOkGuide_PSV.Location = new System.Drawing.Point(459, 312);
+            this.buttonOkGuide_PSV.Location = new System.Drawing.Point(782, 355);
+            this.buttonOkGuide_PSV.Margin = new System.Windows.Forms.Padding(4);
             this.buttonOkGuide_PSV.Name = "buttonOkGuide_PSV";
-            this.buttonOkGuide_PSV.Size = new System.Drawing.Size(98, 35);
+            this.buttonOkGuide_PSV.Size = new System.Drawing.Size(131, 43);
             this.buttonOkGuide_PSV.TabIndex = 1;
             this.buttonOkGuide_PSV.Text = "OK";
             this.buttonOkGuide_PSV.UseVisualStyleBackColor = true;
@@ -47,19 +48,24 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             // labelGuide_PSV
             // 
             this.labelGuide_PSV.AutoSize = true;
-            this.labelGuide_PSV.Location = new System.Drawing.Point(2, 9);
+            this.labelGuide_PSV.Location = new System.Drawing.Point(3, 11);
+            this.labelGuide_PSV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGuide_PSV.Name = "labelGuide_PSV";
-            this.labelGuide_PSV.Size = new System.Drawing.Size(552, 286);
+            this.labelGuide_PSV.Size = new System.Drawing.Size(910, 340);
             this.labelGuide_PSV.TabIndex = 2;
             this.labelGuide_PSV.Text = resources.GetString("labelGuide_PSV.Text");
             // 
             // FormGuide
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 359);
+            this.ClientSize = new System.Drawing.Size(924, 409);
             this.Controls.Add(this.labelGuide_PSV);
             this.Controls.Add(this.buttonOkGuide_PSV);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormGuide";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Руководство пользователя";

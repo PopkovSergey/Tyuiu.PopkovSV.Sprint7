@@ -32,6 +32,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.labelName_PSV = new System.Windows.Forms.Label();
             this.panelTop_PSV = new System.Windows.Forms.Panel();
+            this.buttonStats_PSV = new System.Windows.Forms.Button();
             this.buttonHelp_PSV = new System.Windows.Forms.Button();
             this.buttonReturn_PSV = new System.Windows.Forms.Button();
             this.buttonInfo_PSV = new System.Windows.Forms.Button();
@@ -69,12 +70,11 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.groupBoxSort_PSV = new System.Windows.Forms.GroupBox();
             this.menuStrip1Sort_PSV = new System.Windows.Forms.MenuStrip();
             this.ToolStripMenuItemSortMax_PSV = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItemSortMin_PSV = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemAreaMax_PSV = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemPopulationMax_PSV = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemSortMin_PSV = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemAreaMin_PSV = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemPopulationMin_PSV = new System.Windows.Forms.ToolStripMenuItem();
-            this.buttonStats_PSV = new System.Windows.Forms.Button();
             this.panelTop_PSV.SuspendLayout();
             this.groupBoxData_PSV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMain_PSV)).BeginInit();
@@ -114,6 +114,17 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.panelTop_PSV.Size = new System.Drawing.Size(1395, 123);
             this.panelTop_PSV.TabIndex = 0;
             // 
+            // buttonStats_PSV
+            // 
+            this.buttonStats_PSV.Location = new System.Drawing.Point(882, 11);
+            this.buttonStats_PSV.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonStats_PSV.Name = "buttonStats_PSV";
+            this.buttonStats_PSV.Size = new System.Drawing.Size(302, 91);
+            this.buttonStats_PSV.TabIndex = 17;
+            this.buttonStats_PSV.Text = "Статистические данные";
+            this.buttonStats_PSV.UseVisualStyleBackColor = true;
+            this.buttonStats_PSV.Click += new System.EventHandler(this.buttonStats_PSV_Click);
+            // 
             // buttonHelp_PSV
             // 
             this.buttonHelp_PSV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -124,6 +135,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.buttonHelp_PSV.Size = new System.Drawing.Size(93, 91);
             this.buttonHelp_PSV.TabIndex = 4;
             this.buttonHelp_PSV.UseVisualStyleBackColor = true;
+            this.buttonHelp_PSV.Click += new System.EventHandler(this.buttonHelp_PSV_Click);
             // 
             // buttonReturn_PSV
             // 
@@ -146,6 +158,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.buttonInfo_PSV.Size = new System.Drawing.Size(93, 91);
             this.buttonInfo_PSV.TabIndex = 3;
             this.buttonInfo_PSV.UseVisualStyleBackColor = true;
+            this.buttonInfo_PSV.Click += new System.EventHandler(this.buttonInfo_PSV_Click);
             // 
             // buttonOpen_PSV
             // 
@@ -466,7 +479,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.ToolStripMenuItemSortMin_PSV});
             this.menuStrip1Sort_PSV.Location = new System.Drawing.Point(3, 18);
             this.menuStrip1Sort_PSV.Name = "menuStrip1Sort_PSV";
-            this.menuStrip1Sort_PSV.Size = new System.Drawing.Size(282, 30);
+            this.menuStrip1Sort_PSV.Size = new System.Drawing.Size(282, 28);
             this.menuStrip1Sort_PSV.TabIndex = 0;
             this.menuStrip1Sort_PSV.Text = "menuStrip1";
             // 
@@ -476,17 +489,8 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.ToolStripMenuItemAreaMax_PSV,
             this.ToolStripMenuItemPopulationMax_PSV});
             this.ToolStripMenuItemSortMax_PSV.Name = "ToolStripMenuItemSortMax_PSV";
-            this.ToolStripMenuItemSortMax_PSV.Size = new System.Drawing.Size(139, 26);
+            this.ToolStripMenuItemSortMax_PSV.Size = new System.Drawing.Size(139, 24);
             this.ToolStripMenuItemSortMax_PSV.Text = "По возрастанию";
-            // 
-            // ToolStripMenuItemSortMin_PSV
-            // 
-            this.ToolStripMenuItemSortMin_PSV.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItemAreaMin_PSV,
-            this.ToolStripMenuItemPopulationMin_PSV});
-            this.ToolStripMenuItemSortMin_PSV.Name = "ToolStripMenuItemSortMin_PSV";
-            this.ToolStripMenuItemSortMin_PSV.Size = new System.Drawing.Size(120, 26);
-            this.ToolStripMenuItemSortMin_PSV.Text = "По убыванию";
             // 
             // ToolStripMenuItemAreaMax_PSV
             // 
@@ -502,6 +506,15 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.ToolStripMenuItemPopulationMax_PSV.Text = "Кол-во населения";
             this.ToolStripMenuItemPopulationMax_PSV.Click += new System.EventHandler(this.ToolStripMenuItemPopulationMax_PSV_Click);
             // 
+            // ToolStripMenuItemSortMin_PSV
+            // 
+            this.ToolStripMenuItemSortMin_PSV.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemAreaMin_PSV,
+            this.ToolStripMenuItemPopulationMin_PSV});
+            this.ToolStripMenuItemSortMin_PSV.Name = "ToolStripMenuItemSortMin_PSV";
+            this.ToolStripMenuItemSortMin_PSV.Size = new System.Drawing.Size(120, 24);
+            this.ToolStripMenuItemSortMin_PSV.Text = "По убыванию";
+            // 
             // ToolStripMenuItemAreaMin_PSV
             // 
             this.ToolStripMenuItemAreaMin_PSV.Name = "ToolStripMenuItemAreaMin_PSV";
@@ -516,17 +529,6 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.ToolStripMenuItemPopulationMin_PSV.Text = "Кол-во населения";
             this.ToolStripMenuItemPopulationMin_PSV.Click += new System.EventHandler(this.ToolStripMenuItemPopulationMin_PSV_Click);
             // 
-            // buttonStats_PSV
-            // 
-            this.buttonStats_PSV.Location = new System.Drawing.Point(882, 11);
-            this.buttonStats_PSV.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonStats_PSV.Name = "buttonStats_PSV";
-            this.buttonStats_PSV.Size = new System.Drawing.Size(302, 91);
-            this.buttonStats_PSV.TabIndex = 17;
-            this.buttonStats_PSV.Text = "Статистические данные";
-            this.buttonStats_PSV.UseVisualStyleBackColor = true;
-            this.buttonStats_PSV.Click += new System.EventHandler(this.buttonStats_PSV_Click);
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -536,6 +538,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             this.Controls.Add(this.groupBoxMain_PSV);
             this.Controls.Add(this.groupBoxData_PSV);
             this.Controls.Add(this.panelTop_PSV);
+            this.Enabled = false;
             this.MainMenuStrip = this.menuStrip1Sort_PSV;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";

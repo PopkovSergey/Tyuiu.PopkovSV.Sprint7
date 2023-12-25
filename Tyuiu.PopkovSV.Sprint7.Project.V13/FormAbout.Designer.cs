@@ -39,9 +39,10 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             // pictureBoxAvatar_PSV
             // 
             this.pictureBoxAvatar_PSV.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAvatar_PSV.Image")));
-            this.pictureBoxAvatar_PSV.Location = new System.Drawing.Point(12, 12);
+            this.pictureBoxAvatar_PSV.Location = new System.Drawing.Point(16, 15);
+            this.pictureBoxAvatar_PSV.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxAvatar_PSV.Name = "pictureBoxAvatar_PSV";
-            this.pictureBoxAvatar_PSV.Size = new System.Drawing.Size(76, 94);
+            this.pictureBoxAvatar_PSV.Size = new System.Drawing.Size(101, 116);
             this.pictureBoxAvatar_PSV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxAvatar_PSV.TabIndex = 0;
             this.pictureBoxAvatar_PSV.TabStop = false;
@@ -49,17 +50,19 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             // labelInfo_PSV
             // 
             this.labelInfo_PSV.AutoSize = true;
-            this.labelInfo_PSV.Location = new System.Drawing.Point(94, 12);
+            this.labelInfo_PSV.Location = new System.Drawing.Point(125, 15);
+            this.labelInfo_PSV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelInfo_PSV.Name = "labelInfo_PSV";
-            this.labelInfo_PSV.Size = new System.Drawing.Size(284, 117);
+            this.labelInfo_PSV.Size = new System.Drawing.Size(363, 153);
             this.labelInfo_PSV.TabIndex = 1;
             this.labelInfo_PSV.Text = resources.GetString("labelInfo_PSV.Text");
             // 
             // buttonOK_PSV
             // 
-            this.buttonOK_PSV.Location = new System.Drawing.Point(302, 167);
+            this.buttonOK_PSV.Location = new System.Drawing.Point(406, 172);
+            this.buttonOK_PSV.Margin = new System.Windows.Forms.Padding(4);
             this.buttonOK_PSV.Name = "buttonOK_PSV";
-            this.buttonOK_PSV.Size = new System.Drawing.Size(87, 40);
+            this.buttonOK_PSV.Size = new System.Drawing.Size(116, 31);
             this.buttonOK_PSV.TabIndex = 2;
             this.buttonOK_PSV.Text = "OK";
             this.buttonOK_PSV.UseVisualStyleBackColor = true;
@@ -67,12 +70,16 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             // 
             // FormAbout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(401, 219);
+            this.ClientSize = new System.Drawing.Size(535, 218);
             this.Controls.Add(this.buttonOK_PSV);
             this.Controls.Add(this.labelInfo_PSV);
             this.Controls.Add(this.pictureBoxAvatar_PSV);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormAbout";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "О программе";

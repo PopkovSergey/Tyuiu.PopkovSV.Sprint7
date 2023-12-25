@@ -50,6 +50,8 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
                     dataGridViewMain_PSV.Rows[r].Cells[c].Value = DataMatrix[r, c];
                 }
             }
+            //ToolStripMenuItemSortMax_PSV.Enabled = true;
+            //ToolStripMenuItemSortMin_PSV.Enabled = true;
         }
 
         private void buttonReturn_PSV_Click(object sender, EventArgs e)
@@ -345,5 +347,19 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             }
             textBoxDelete_PSV.Text = "";
         }
+
+        private void buttonHelp_PSV_Click(object sender, EventArgs e)
+        {
+            FormGuide formGuide = new FormGuide();
+            formGuide.Show();
+        }
+
+        private void buttonInfo_PSV_Click(object sender, EventArgs e)
+        {
+            FormAbout formAbout = new FormAbout();
+            formAbout.Show();
+        }
+
+
     }
 }
