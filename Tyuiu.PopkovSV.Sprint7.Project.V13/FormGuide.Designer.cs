@@ -59,7 +59,7 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(924, 409);
+            this.ClientSize = new System.Drawing.Size(945, 409);
             this.Controls.Add(this.labelGuide_PSV);
             this.Controls.Add(this.buttonOkGuide_PSV);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

@@ -50,8 +50,11 @@ namespace Tyuiu.PopkovSV.Sprint7.Project.V13
                     dataGridViewMain_PSV.Rows[r].Cells[c].Value = DataMatrix[r, c];
                 }
             }
-            //ToolStripMenuItemSortMax_PSV.Enabled = true;
-            //ToolStripMenuItemSortMin_PSV.Enabled = true;
+            ToolStripMenuItemSortMax_PSV.Enabled = true;
+            ToolStripMenuItemSortMin_PSV.Enabled = true;
+            buttonSearch_PSV.Enabled = true;
+            textBoxWhatSearch_PSV.Enabled = true;
+            textBoxColumns_PSV.Enabled = true;
         }
 
         private void buttonReturn_PSV_Click(object sender, EventArgs e)
